@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen grid place-content-center bg-Very-Dark-Blue">
+    <main
+      class="text-15 font-Overpass bg-Dark-Blue rounded-2xl max-w-[375px] md:max-w-[400px]"
+    >
+      <div class="rating-section py-7 px-8 md:p-8">
+        <div
+          class="bg-Dark-Blue brightness-125 h-12 w-12 rounded-full flex items-center justify-center"
+        >
+          <!-- Rating state start -->
+          <img class="w-4" src="/images/icon-star.svg" alt="Star Icon" />
+        </div>
+        <h1 class="text-White text-3xl pt-6 pb-4">How did we do?</h1>
+        <p class="text-Medium-Grey leading-6">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="flex items-center justify-between py-8">
+          <span class="buttons">1</span>
+          <span class="buttons">2</span>
+          <span class="buttons">3</span>
+          <span class="buttons">4</span>
+          <span class="buttons">5</span>
+        </div>
+
+        <div class="text-center pb-3">
+          <button
+            class="text-White tracking-widest uppercase bg-Orange w-full h-14 rounded-full text-lg hover:text-Orange hover:bg-White ease-in-out duration-300"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <!-- Rating state end -->
+      <div class="thankyou-section p-7 md:py-10 hidden">
+        <!-- Thank you state start -->
+        <div class="grid place-content-center p-2">
+          <img src="/images/illustration-thank-you.svg" alt="Thank you image" />
+        </div>
+        <div class="text-Orange py-6 grid place-content-center">
+          <p class="ratings bg-Medium-Grey/25 px-3 pt-1 rounded-full">
+            You selected
+            <!-- Add rating here -->
+            out of 5
+          </p>
+        </div>
+        <h2 class="text-White text-2xl md:text-3xl text-center p-2">
+          Thank you!
+        </h2>
+        <p class="text-Medium-Grey text-center px-1">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <!-- Thank you state end -->
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>
